@@ -1,0 +1,35 @@
+{
+  "name": "integracoes-service",
+  "version": "1.0.0",
+  "description": "Servico de integracoes com mensageria, webhooks e conectores para APIs externas",
+  "main": "dist/index.js",
+  "author": "bruno1186",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "start:dev": "tsx watch src/index.ts",
+    "lint": "eslint \"src/**/*.ts\" --fix",
+    "test": "jest"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.4",
+    "axios": "^1.7.2",
+    "bullmq": "^5.8.7",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "ioredis": "^5.4.1",
+    "kafkajs": "^2.2.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.10.5",
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.10",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.2",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3"
+  }
+}
